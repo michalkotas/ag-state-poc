@@ -1,0 +1,26 @@
+<div>
+  <ag-grid-angular #agGrid
+                   style="width: 1000px; height: 600px;"
+                   class="ag-theme-balham"
+                   [rowData]="rowData"
+                   [gridOptions]="gridOptions"
+  >
+  </ag-grid-angular>
+</div>
+<div>
+  <button (click)="loadData()">loadData</button>
+  <button (click)="getColumnState()">getColumnState</button>
+  <button (click)="saveColumnState()">saveColumnState</button>
+  <button (click)="restoreColumnState()">restoreColumnState</button>
+  <button (click)="resetColumnState()">resetColumnState</button>
+  <button (click)="savePivot()">savePivot</button>
+  <button (click)="restorePivot()">restorePivot</button>
+  <button (click)="saveFilterModel()">saveFilterModel</button>
+  <button (click)="restoreFilterModel()">restoreFilterModel</button>
+  <button (click)="saveSortModel()">saveSortModel</button>
+  <button (click)="restoreSortModel()">restoreSortModel</button>
+  <button (click)="saveAll()">saveAll</button>
+  <button (click)="restoreAll()">restoreAll</button>
+  <button (click)="getColumnDefs()">getColumnDefs</button>
+</div>
+
